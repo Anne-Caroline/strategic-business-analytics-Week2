@@ -38,7 +38,7 @@
 
 
 
-# Set your directory to the folder where you have downloaded the Credit Scoring dataset 
+# Set your directory to the folder where you have downloaded the Credit Scoring dataset
 
 
 
@@ -180,7 +180,7 @@ plot(aggbTimeRank$TIC,aggbTimeRank$left,main= "Time and Employee Attrition", yla
 
 cntbTimeRank=aggregate(left~ TIC, data=tempdata, FUN=length) # We compute the number of employees for each value of TIC
 
-symbols(aggbTimeRank$TIC,aggbTimeRank$left,circles=cntbTimeRank$left, inches=.75, fg="white", bg="red",main= "Time and Employee Attrition", ylab="Average Attrition Rate", xlab= "Time spent") # we 
+symbols(aggbTimeRank$TIC,aggbTimeRank$left,circles=cntbTimeRank$left, inches=.75, fg="white", bg="red",main= "Time and Employee Attrition", ylab="Average Attrition Rate", xlab= "Time spent") # we
 
 # (See Addendum A for a more rigorous approach)
 
@@ -200,13 +200,11 @@ symbols(aggbSatisRank$rankSatis,aggbSatisRank$left,circles=cntbSatisRank$left, i
 # (See Addendum B for a more rigorous approach)
 
 
-#######################################################
-
-##                  Addendum                         ##
-
-## Contributed by Stefan Avey (http://stefanavey.me) ##
-
-#######################################################
+################################################################
+##                         Addendum                           ##
+##                Contributed by Stefan Avey                  ##
+## https://github.com/stefanavey/strategic-business-analytics ##
+################################################################
 
 ## The Bubble Charts in the last 2 examples can be made more rigorously by adjusting
 
